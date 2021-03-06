@@ -28,9 +28,8 @@ with open('D:\hospitaldb\hospitals.csv', 'r') as hospitalrec:
     h_reader = csv.reader(hospitalrec)
     next(h_reader)
     for rec in h_reader:
-        conn.execute(
-            "INSERT INTO Hospital VALUES (?, ?, ?);", rec)
-conn.commit()
+        conn.execute("INSERT OR REPLACE INTO Hospital VALUES (?, ?, ?);", rec)
+        sqlite_conn.commit()
 print("Records added")
 
 # Create Table
@@ -57,8 +56,9 @@ with open('D:\hospitaldb\doctors.csv', 'r') as docrec:
     d_reader = csv.reader(docrec)
     next(d_reader)
     for rec in d_reader:
-        conn.execute("INSERT INTO Doctor VALUES (?, ?, ?, ?, ?, ?, ?);", rec)
-        conn.commit()
+        conn.execute(
+            "INSERT OR REPLACE INTO Doctor VALUES (?, ?, ?, ?, ?, ?, ?);", rec)
+        sqlite_conn.commit()
 print("Records added")
 
 conn.close()
