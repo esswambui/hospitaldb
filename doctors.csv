@@ -1,0 +1,6 @@
+  Doctor_id,Doctor_Name,Hospital_id,Date_joined,Speciality,Salary,Experience
+1,Mercy,3847,13-Mar-20,ENT,Junior,50000
+2,Mike,3846,29-Jun-18,Neurology,Senior,80000
+3,John,1023,2-Jan-19,Gynacology,Senior,70000
+4,Esther,4756,3-Apr-20,Psychiatry,Intern,20000
+5,Timothy,2834,21-Aug-19,Orthopedics,Junior,60000

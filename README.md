@@ -4,5 +4,11 @@
 ## 1- sqliteconnection.py
 The code:
 - Creates a SQLite database connection to a database that resides in the memory.
-= Crestes an empty table.
+- Creates an empty table.
 - Prints out the table structure. 
+
+## 2- createdb.py
+The code:
+- Creates a SQLite database('MyDatabase') and connects with the database.
+- Prints the version of the SQLite database.
+- Creates two Tables Hospital and Doctors.
