@@ -12,3 +12,5 @@ The code:
 - Creates a SQLite database('MyDatabase') and connects with the database.
 - Prints the version of the SQLite database.
 - Creates two Tables Hospital and Doctors.
+- Adds records to each of the tables.
+- Joins the two tables.
